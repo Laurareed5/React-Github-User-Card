@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+body {
+  line-height: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ol,
+ul {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+blockquote,
+q {
+  quotes: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing : 0;
+}
+
+a {
+  text-decoration: none;
+  color          : rgb(207, 137, 207);
+  font-size      : medium;
+}
+
+html,
+body,
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing : border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.container {
+  max-width     : 800px;
+  margin        : 50px auto;
+  padding       : 30px;
+  display       : flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items   : center;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  width          : 100%;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  margin-bottom  : 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header img {
+  width : 150px;
+  height: 150px;
+}
+
+.header p {
+  font-size: 48px;
+}
+
+.btn {
+  display        : flex;
+  padding        : 0.3em 1.2em;
+  margin         : auto;
+  border-radius  : 2em;
+  box-sizing     : border-box;
+  text-decoration: none;
+  font-family    : 'Roboto',
+    sans-serif;
+  font-weight     : 300;
+  color           : #FFFFFF;
+  background-color: #c95d9c;
+  text-align      : center;
+  transition      : all 0.2s;
+  margin-bottom   : 10px;
+}
+
+.cards {
+  width: 100%;
+}
+
+.card {
+  width           : 80%;
+  padding         : 20px;
+  display         : flex;
+  border-radius   : 5px;
+  box-shadow      : 0 1px 6px -2px #000;
+  background-color: #FFF;
+  margin-bottom   : 30px;
+  margin-left     : 10%;
+}
+
+.card img {
+  width        : 150px;
+  height       : 150px;
+  border-radius: 3px;
+  margin-right : 20px;
+}
+
+.card .name {
+  font-size: 3.4rem;
+}
+
+.card p {
+  font-size    : 1.4rem;
+  margin-bottom: 3px;
+}
+
+.card .username {
+  font-size : 1.8rem;
+  font-style: italic;
+  margin    : 3px 0 10px;
 }
